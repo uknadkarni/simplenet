@@ -30,5 +30,29 @@ pip install numpy
 python main.py
 ```
 This will run the entire workflow of creating tensors, training the model, saving it, loading it back, and making predictions.
+
+## Hyperparameters
+Hyperparameters are parameters that are set before the learning process begins and are not learned from the data. Here are the examples of hyperparameters in this code:
+1. Network Architecture:
+The number of layers in SimpleNet (2 layers in this case)
+The dimensions of each layer (10 -> 5 -> 1)
+2. Activation Function:
+The choice of ReLU (torch.relu) as the activation function
+3. Loss Function:
+The choice of Mean Squared Error (nn.MSELoss())
+4. Optimizer:
+The choice of Stochastic Gradient Descent (optim.SGD)
+Learning rate (lr=0.01)
+5. Training Process:
+Number of epochs (num_epochs=5 in the train_model function)
+Batch size (batch_size=32 in DataLoader)
+6. Dataset:
+The size of the dataset (100 samples in this case)
+The dimensionality of the input data (10 features)
+7. Data Preprocessing:
+The choice to shuffle the data (shuffle=True in DataLoader)
+8. Random Seed:
+np.random.seed(42) for reproducibility
+
 Conclusion
 The SimpleNet project provides a foundational understanding of building and training neural networks using PyTorch. Each file serves a specific purpose in demonstrating key concepts in machine learning and deep learning workflows.
